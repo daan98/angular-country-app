@@ -42,12 +42,4 @@ export class CountryPageComponent implements OnInit {
       }
     );
   }
-
-  public searchCountry(code : string) {
-    this.countriesService.searchCountryByAlphaCode(code).subscribe(
-      (country : CountryInterface | null) => {
-        console.log({country})
-      }
-    );
-  }
 }
